@@ -30,5 +30,14 @@ ESP32-based Edge Computing IoT Hub with ambient monitoring, web clock, and touch
        ESP32 Output Pins for RGB LED Indicator:
        - GPIO 21  ===> [ 220Ω Resistor ] ===> RGB LED Red Pin
        - GPIO 19  ===> [ 220Ω Resistor ] ===> RGB LED Green Pin
+
+## 💬 Community & Open Feedback
+
+This project was built with an open-source mindset **for the people, by the people**. 
+
+We welcome all feedback, technical reviews, and constructive criticism to help improve this system:
+* **Bug Reports & Code Improvements:** Open a ticket under the [Issues](../../issues) tab.
+* **General Feedback & Feature Ideas:** Start a thread in [Discussions](../../discussions).
+* **Pull Requests:** Feel free to fork this repository, refine the logic or circuits, and submit a PR!
        - GPIO 22  ===> [ 220Ω Resistor ] ===> RGB LED Blue Pin
        - GND      =========================> RGB LED GND Pin
