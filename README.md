@@ -1,6 +1,23 @@
-# Adaptive-Ambient-Control-Hub
-ESP32-based Edge Computing IoT Hub with ambient monitoring, web clock, and touchless IR alarm dismissal.
-## 🔌 Hardware Pin Mapping
+# Adaptive Ambient & Touchless Control Hub 🚀
+
+An autonomous **Edge Computing IoT System** built with ESP32 that integrates environmental monitoring, web-configurable alarms, and touchless IR sensor gesture controls without relying on external cloud infrastructure.
+
+---
+
+## 🌟 Key Features
+
+* **Edge Computing Architecture:** All sensor processing, logic, and web server rendering occur locally on the ESP32 with zero internet or cloud dependency.
+* **Environmental Monitoring:** Real-time temperature and humidity tracking (DHT11) alongside air pollution and gas detection (MQ-135).
+* **Single-Color LED Visual States:**
+  * 🟢 **Solid Green:** System Normal / Safe
+  * 🔵 **Solid Blue:** High Humidity / Temperature Warning
+  * 🔴 **Solid Red:** Gas Hazard / Active Alarm
+* **Touchless IR Gesture Dismissal:** Wave a hand in front of the IR sensor to immediately silence active alarms or hazard beepers.
+* **Embedded Web Control Hub:** Local Wi-Fi Access Point (`192.168.4.1`) hosting an auto-refreshing dashboard to sync system clocks, view live sensor metrics, and program daily alarm presets.
+
+---
+
+## 🛠️ Hardware Stack
 
 | Component | Pin / Type | ESP32 GPIO Pin | Description |
 | :--- | :--- | :--- | :--- |
@@ -11,6 +28,9 @@ ESP32-based Edge Computing IoT Hub with ambient monitoring, web clock, and touch
 | **RGB LED (Red)** | Anode / Cathode | **GPIO 21** | Gas Hazard & Alarm Indicator |
 | **RGB LED (Green)**| Anode / Cathode | **GPIO 19** | Normal / Safe System State |
 | **RGB LED (Blue)** | Anode / Cathode | **GPIO 22** | Humidity & Temperature Warning |
+
+---
+
 ## 📐 Circuit Schematic & Wiring Diagram
 
 ```text
@@ -30,14 +50,5 @@ ESP32-based Edge Computing IoT Hub with ambient monitoring, web clock, and touch
        ESP32 Output Pins for RGB LED Indicator:
        - GPIO 21  ===> [ 220Ω Resistor ] ===> RGB LED Red Pin
        - GPIO 19  ===> [ 220Ω Resistor ] ===> RGB LED Green Pin
-
-## 💬 Community & Open Feedback
-
-This project was built with an open-source mindset **for the people, by the people**. 
-
-We welcome all feedback, technical reviews, and constructive criticism to help improve this system:
-* **Bug Reports & Code Improvements:** Open a ticket under the [Issues](../../issues) tab.
-* **General Feedback & Feature Ideas:** Start a thread in [Discussions](../../discussions).
-* **Pull Requests:** Feel free to fork this repository, refine the logic or circuits, and submit a PR!
        - GPIO 22  ===> [ 220Ω Resistor ] ===> RGB LED Blue Pin
        - GND      =========================> RGB LED GND Pin
