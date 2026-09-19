@@ -1,5 +1,7 @@
 # Adaptive Ambient & Touchless Control Hub 🚀
 
+> *"This tech wasn't created just for documentation—it was created for the people. A movement for the people, by the people. Anyone should be able to see this, build this, and develop it further."*
+
 An autonomous **Edge Computing IoT System** built with ESP32 that integrates environmental monitoring, web-configurable alarms, and touchless IR sensor gesture controls without relying on external cloud infrastructure.
 
 ---
